@@ -1,0 +1,33 @@
+[user]
+	name = Gabriel Rodrigues
+	email = gabrielroodriz@gmail.com
+[core]
+    editor = code --wait
+    excludesfile = ~/.gitignore_global
+    autocrlf = input
+
+[init]
+    defaultBranch = main
+[color]
+    ui = auto
+[pull]
+    rebase = true
+[push]
+    default = current
+[alias]
+    st = status
+    co = checkout
+    br = branch
+    ci = commit
+    unstage = reset HEAD --
+    last = log -1 HEAD
+   lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+
+[credential]
+	helper = osxkeychain

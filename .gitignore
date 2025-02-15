@@ -1,0 +1,35 @@
+# SSH keys e configurações sensíveis
+.ssh/*
+!.ssh/config
+
+# NPM tokens e credenciais
+.npmrc
+
+# Histórico e cache
+*.log
+*.cache
+.zsh_history
+.zcompdump*
+
+# Arquivos locais específicos da máquina
+.DS_Store
+.Trash
+.local
+
+# Tokens e credenciais
+*.token
+*.key
+*.pem
+*.crt
+
+# Diretórios específicos que podem conter dados sensíveis
+.aws/credentials
+.docker/config.json
+
+# VS Code configurações locais
+.vscode/argv.json
+
+# Node
+.npm
+.nvm
+node_modules/

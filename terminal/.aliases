@@ -1,0 +1,66 @@
+# Navigation
+alias ..="cd .."
+alias ...="cd ../.."
+alias dev="cd ~/Development"
+alias projects="cd ~/Documents/Project"
+alias dotfiles="cd ~/.dotfiles"
+
+# Git
+alias gs="git status"
+alias gc="git commit"
+alias gp="git push"
+alias gpl="git pull"
+alias gb="git branch"
+alias gco="git checkout"
+alias gl="git log --oneline --decorate --graph"
+
+# React Native / Expo
+alias rn="react-native"
+alias rnios="react-native run-ios"
+alias rnand="react-native run-android"
+alias exps="expo start"
+alias expb="expo build"
+alias expp="expo publish"
+alias expd="expo doctor"
+
+# NPM
+alias ni="npm install"
+alias nid="npm install --save-dev"
+alias nrs="npm run start"
+alias nrb="npm run build"
+alias nrt="npm run test"
+alias nrl="npm run lint"
+
+# Yarn
+alias yi="yarn install"
+alias ya="yarn add"
+alias yad="yarn add --dev"
+alias ys="yarn start"
+alias yb="yarn build"
+alias yt="yarn test"
+alias yl="yarn lint"
+
+# Utils
+alias ports="lsof -i -P -n | grep LISTEN"
+alias ip="ifconfig | grep 'inet ' | grep -v 127.0.0.1"
+alias cleannode="rm -rf node_modules/ && rm package-lock.json && npm install"
+alias cleanyarn="rm -rf node_modules/ && rm yarn.lock && yarn install"
+
+# Metro Bundler
+alias resetmetro="rm -rf $TMPDIR/metro-* && rm -rf $TMPDIR/haste-*"
+alias cleanwatchman="watchman watch-del-all && rm -rf $TMPDIR/metro-*"
+alias resetcache="npm start -- --reset-cache"
+
+# iOS
+alias podclean="cd ios && pod deintegrate && pod clean && cd .. && rm -rf ios/Pods && rm -rf ios/build && cd ios && pod install && cd .."
+
+# System
+alias ls="eza --icons --group-directories-first"
+alias ll="eza --icons --group-directories-first -l"
+alias vim=nvim
+
+
+alias kill_port=findandkill
+alias change_kitty_profile="sh ~/.config/kitty/change-profile.sh"
+alias toggle_kitty_transparency="sh ~/.config/kitty/toggle-transparency.sh"
+alias bundletool='java -jar /usr/local/bin/bundletool-all-1.17.2.jar'
